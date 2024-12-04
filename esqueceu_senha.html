@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Login</title>
+
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient( to right, rgb(0, 119, 255), rgba(255, 166, 0, 0.726))
+        }
+
+        .caixa{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+            color: white;
+        }
+
+        fieldset{
+            border: 3px solid rgba(255, 166, 0, 0.726);
+        }
+        
+        legend{
+            border: 1px solid rgba(255, 166, 0, 0.726);
+            padding: 10px;
+            background-color: rgba(255, 166, 0, 0.726);
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        .formulario{
+            position: relative;
+        }
+
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+
+        .labelinput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .inputUser:focus ~ .labelinput, 
+        .inputUser:valid ~ .labelinput{
+            top: -14px;
+            color: rgba(255, 166, 0, 0.726);
+        }
+
+        #submit{
+            background-image: linear-gradient( to right, rgb(0, 119, 255), rgba(255, 166, 0, 0.726));
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            margin-bottom: 10px;
+            text-decoration: none;
+            justify-content: center;
+        }
+
+        #submit:hover{
+            background-image: linear-gradient( to right, rgb(1, 82, 175), rgb(204, 133, 1));
+        
+        }
+
+        #esqueci_senha{
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <form action ="">
+            <fieldset>
+                    <legend><b>Esqueceu a Senha</b></legend>
+                    <p>Insira seu email ou número de celular para procurar sua conta.</p>
+                    <div class="formulario">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelinput">Email ou Telefone</label>
+                    </div>
+                    <br> <br>
+
+                    <a href="#" type="imput" name="imput" id="submit">Pesquisar</a>
+                    <a href="cadastro.html" type="imput" name="imput" id="submit">Cancelar</a>
+             </fieldset>
+        </form>
+    </div>
+</body>
+</html>
